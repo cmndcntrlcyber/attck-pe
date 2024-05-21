@@ -3,10 +3,9 @@
 ### [ATT&CK Database](https://cmndcntrl.notion.site/ATT-CK-TTP-Database-82388bfa18a6411c8bdf844a7880bc6b)
 - Initial Plan
     Create an [agent.](http://agent.py/)py file that does the following:
-    
+    ![console output](https://github.com/cmndcntrlcyber/attck-pe/assets/47669879/4e8b1d28-fc54-4c6c-a4e3-2013ce96dbae)
+
     1. receive the ATT&CK TTP prompt from the user
-        
-        ![Untitled](https://www.notion.so/cmndcntrl/ATTCK-PE-Portable-Executor-b6d967803ca14ddaa77626a6cdd81046?pvs=4#dc9bd0095f024ba593e0c4d2ab5c9930)
         
     2. searches its resources for the right URL
         1. uses Vector DB workers to send requests to the ATTCK Database 
