@@ -6,7 +6,7 @@
     
     1. receive the ATT&CK TTP prompt from the user
         
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6a969394-6c77-4ae0-add7-cf2ff01004c6/4f75e153-e316-4cd0-9063-cfd9209bdebc/Untitled.png)
+        ![Untitled](https://www.notion.so/cmndcntrl/ATTCK-PE-Portable-Executor-b6d967803ca14ddaa77626a6cdd81046?pvs=4#dc9bd0095f024ba593e0c4d2ab5c9930)
         
     2. searches its resources for the right URL
         1. uses Vector DB workers to send requests to the ATTCK Database 
