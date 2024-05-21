@@ -67,7 +67,7 @@ openai==1.14.3
 ordered-set==4.1.0
 packaging==24.0
 pandas==2.2.1
-pillow==10.2.0
+pillow==10.3.0
 platformdirs==4.2.0
 protobuf==5.26.1
 psutil==5.9.8
