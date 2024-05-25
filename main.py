@@ -15,7 +15,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, PromptTemp
 
 load_dotenv()
 
-llm = Ollama(model="dolphin-mistral:latest", request_timeout=120.0)
+llm = Ollama(model="dolphin-mistral:latest", request_timeout=360.0)
 
 # find a way to develop your own parser using notion API
 parser = LlamaParse(result_type="markdown")
@@ -40,7 +40,7 @@ tools = [
     code_reader,
 ]
 
-code_llm = Ollama(model="red-team-expert:latest")
+code_llm = Ollama(model="dolphin-phi:latest")
 agent = ReActAgent.from_tools(tools, llm=code_llm, verbose=True, context=context)
 
 class CodeOutput(BaseModel):
@@ -67,7 +67,7 @@ while (prompt := input("Enter a prompt (q to quit): ")) != "q":
     retries = 0
     cleaned_json = None
     
-    while retries < 3 and cleaned_json is None:
+    while retries < 5 and cleaned_json is None:
         try:
             result = agent.query(prompt)
             next_result = output_pipeline.run(response=result)
