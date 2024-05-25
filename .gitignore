@@ -1,6 +1,4 @@
 .env
-./__pycache__/
-./__pycache__/*
-./output/*
-./.venv/
-./.venv/*
+.ruff_cache
+.vscode
+__pycache__
