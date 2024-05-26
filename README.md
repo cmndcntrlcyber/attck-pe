@@ -14,3 +14,12 @@
     4. Requests the raw byte-string data from the URL webpage
     5. AES256 decrypts the byte-string data 
     6. Executes the content of the decrypted byte-string data as a new thread
+
+## Contributing
+Contributions, suggestions, and feedback are welcome. Please create an issue or pull request for any contributions.
+
+1. Fork the repository.
+2. Create a new branch for your `username-dev` (e.g. `cmndcntrlcyber-dev`) feature (e.g. `cmndcntrlcyber-feat`) or bug fix (e.g. `cmndcntrlcyber-fix`).
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Open a pull request in the main repository.
