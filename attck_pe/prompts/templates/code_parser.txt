@@ -1,0 +1,1 @@
+Parse the response from a previous LLM into a description and a string of valid code, also come up with a valid filename this could be saved as that doesn't contain special characters. Here is the response: {response}. You should parse this in the following JSON
