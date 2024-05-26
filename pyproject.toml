@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "attck-pe"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+llama-index = "^0.10.38"
+llama-parse = "^0.4.3"
+ollama = "^0.2.0"
+llama-index-llms-ollama = "^0.1.5"
+python-dotenv = "^1.0.1"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.5"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
