@@ -40,9 +40,7 @@ def check_model_name(name: str) -> None:
     return None
 
 
-def load_llm_model(
-    model: str = "dolphin-mistral:latest", timeout: float = 120.0
-) -> Ollama:
+def load_llm_model(model: str, timeout: float = 360.0) -> Ollama:
     check_model_name(model)
     return Ollama(model=model, request_timeout=timeout)
 
@@ -200,7 +198,7 @@ def process_response(response) -> Dict[str, Any] | None:
 
 
 def gen_code(agent, prompt, query_pipeline: QueryPipeline):
-    max_retries = 3
+    max_retries = 5
     retries = 0
     cleaned_json = None
 
@@ -214,6 +212,9 @@ def gen_code(agent, prompt, query_pipeline: QueryPipeline):
             msg = f"Error occurred: {e}\n"
             msg += f"Attempt #{retries} (max {max_retries})"
             print(msg)
+    if not cleaned_json:
+        # TODO: raise a custom exception instead of printing.
+        print(f"Failed to generate code after {retries} attempts.")
     return cleaned_json
 
 
@@ -253,7 +254,7 @@ def main() -> None:
     # Load AI models
     llm_model = load_llm_model("dolphin-mistral:latest")
     embed_model = load_embed_model("local:BAAI/bge-m3")
-    agent_llm_model = load_llm_model("red-team-expert:latest")
+    agent_llm_model = load_llm_model("dolphin-phi:latest")
 
     query_engine = build_query_engine(llm_model, embed_model, documents)
     code_generator = build_code_generator(query_engine)
