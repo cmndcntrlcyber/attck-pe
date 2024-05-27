@@ -1,0 +1,1 @@
+Start-Job -ScriptBlock { & '$binaryPath' }
