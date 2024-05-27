@@ -34,13 +34,13 @@ tools = [
         query_engine=query_engine,
         metadata=ToolMetadata(
             name="code_generation",
-            description="This generates Red Team Code",
+            description="This generates code",
         ),
     ),
     code_reader,
 ]
 
-code_llm = Ollama(model="dolphin-phi:latest")
+code_llm = Ollama(model="red_expert_lvl3:latest")
 agent = ReActAgent.from_tools(tools, llm=code_llm, verbose=True, context=context)
 
 class CodeOutput(BaseModel):
