@@ -34,7 +34,7 @@ tools = [
         query_engine=query_engine,
         metadata=ToolMetadata(
             name="code_generation",
-            description="This generates Red Team Code",
+            description="This generates code",
         ),
     ),
     code_reader,
