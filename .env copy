@@ -1,0 +1,4 @@
+LLAMA_CLOUD_API_KEY=""
+
+# Set PyTorch CUDA allocation configuration
+PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"

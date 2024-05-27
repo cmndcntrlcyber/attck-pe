@@ -17,9 +17,6 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, PromptTemp
 
 load_dotenv()
 
-# Set PyTorch CUDA allocation configuration
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-
 # Initialize LLM
 llm = Ollama(model="dolphin-mistral:latest", request_timeout=360.0)
 
