@@ -3,4 +3,5 @@
 .ruff_cache
 .vscode
 __pycache__
+
 output/
