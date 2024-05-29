@@ -1,0 +1,15 @@
+OLLAMA_API_BASE_URL="http://localhost:11434"
+
+OPENAI_API_KEY=""
+
+# Supabase Public
+NEXT_PUBLIC_SUPABASE_URL="http://localhost:54321"
+NEXT_PUBLIC_SUPABASE_ANON_KEY=""
+
+# Supabase Private
+SUPABASE_SERVICE_ROLE_KEY=""
+ 
+LLAMA_CLOUD_API_KEY=""
+
+# Set PyTorch CUDA allocation configuration
+PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"
