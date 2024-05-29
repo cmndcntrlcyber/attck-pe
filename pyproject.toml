@@ -2,7 +2,7 @@
 name = "attck-pe"
 version = "0.1.0"
 description = ""
-authors = ["Raymond Soreng::r.soreng@c3s.consulting || "]
+authors = ["Raymond Soreng - r.soreng@c3s.consulting || Donald Hawkins - Donald@Hawkins.pro"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
