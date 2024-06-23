@@ -1,0 +1,10 @@
+import bad_logging
+import broken_access
+import broken_auth
+import deserial
+import exposed_data
+import injection
+import known_vulns
+import sec_misconfig
+import xee
+import xss
