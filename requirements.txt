@@ -98,6 +98,7 @@ SQLAlchemy==2.0.29
 starlette==0.37.2
 striprtf==0.0.26
 sympy==1.12
+tabulate==0.8.9
 tenacity==8.2.3
 threadpoolctl==3.4.0
 tiktoken==0.6.0

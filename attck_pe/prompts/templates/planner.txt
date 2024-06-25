@@ -1,0 +1,1 @@
+Parse the JSON files in the "../planner/enterprise-attack/,"; next generate a name for {final_plan} and write the {final_plan} in JSON format into the "../utils/final_plans" folder titled the generated name.
